@@ -6,6 +6,7 @@
       tab-width 2
       indent-tabs-mode nil
       sgml-indent-data t
+      nxml-child-indent 2
       make-backup-files nil)
 
 (global-set-key [(control up)] '(lambda ()
