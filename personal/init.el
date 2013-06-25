@@ -9,9 +9,15 @@
       nxml-child-indent 2
       make-backup-files nil)
 
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
+
 (global-set-key [(control up)] '(lambda ()
                                   (interactive)
                                   (previous-line 6)))
 (global-set-key [(control down)] '(lambda ()
                                     (interactive)
                                     (next-line 6)))
+
+(add-hook 'php-mode-hook (lambda () ()
+                           (setq indent-tabs-mode nil)
+                           ))
