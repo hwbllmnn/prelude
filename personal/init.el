@@ -1,12 +1,13 @@
 (transient-mark-mode t)
 
 (setq prelude-guru nil
+      prelude-flyspell nil
       auto-save-interval 0
       sh-basic-offset 2
       tab-width 2
       indent-tabs-mode nil
       sgml-indent-data t
-      nxml-child-indent 2
+      nxml-child-indent 4
       make-backup-files nil)
 
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
