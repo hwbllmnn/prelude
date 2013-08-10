@@ -19,6 +19,12 @@
                                     (interactive)
                                     (next-line 6)))
 
-(add-hook 'php-mode-hook (lambda () ()
+(add-hook 'php-mode-hook (lambda ()
                            (setq indent-tabs-mode nil)
                            ))
+
+(add-hook 'ess-mode-hook (lambda ()
+                           (whitespace-mode)
+                           ))
+
+(smartparens-global-mode -1)
