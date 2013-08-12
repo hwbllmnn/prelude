@@ -18,6 +18,8 @@
 (global-set-key [(control down)] '(lambda ()
                                     (interactive)
                                     (next-line 6)))
+(global-set-key [remap move-beginning-of-line]
+                'move-beginning-of-line)
 
 (add-hook 'php-mode-hook (lambda ()
                            (setq indent-tabs-mode nil)
