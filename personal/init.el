@@ -8,7 +8,8 @@
       indent-tabs-mode nil
       sgml-indent-data t
       nxml-child-indent 4
-      make-backup-files nil)
+      make-backup-files nil
+      whitespace-style '(spaces))
 
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
 
@@ -23,10 +24,17 @@
 
 (add-hook 'php-mode-hook (lambda ()
                            (setq indent-tabs-mode nil)
+                           (whitespace-mode)
                            ))
 
 (add-hook 'ess-mode-hook (lambda ()
                            (whitespace-mode)
                            ))
 
+(add-hook 'js-mode-hook (lambda ()
+                          (whitespace-mode)
+                          ))
+
 (smartparens-global-mode -1)
+
+(global-whitespace-mode)
