@@ -9,7 +9,8 @@
       sgml-indent-data t
       nxml-child-indent 4
       make-backup-files nil
-      whitespace-style '(spaces))
+      whitespace-style '(spaces tabs newline space-mark tab-mark newline-mark empty trailing)
+      whitespace-action '(auto-cleanup))
 
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
 
@@ -21,19 +22,6 @@
                                     (next-line 6)))
 (global-set-key [remap move-beginning-of-line]
                 'move-beginning-of-line)
-
-(add-hook 'php-mode-hook (lambda ()
-                           (setq indent-tabs-mode nil)
-                           (whitespace-mode)
-                           ))
-
-(add-hook 'ess-mode-hook (lambda ()
-                           (whitespace-mode)
-                           ))
-
-(add-hook 'js-mode-hook (lambda ()
-                          (whitespace-mode)
-                          ))
 
 (smartparens-global-mode -1)
 
