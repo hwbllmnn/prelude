@@ -13,6 +13,7 @@
       whitespace-action '(auto-cleanup))
 
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js-mode))
 
 (global-set-key [(control up)] '(lambda ()
                                   (interactive)
