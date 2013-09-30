@@ -9,6 +9,9 @@
       sgml-indent-data t
       nxml-child-indent 4
       make-backup-files nil
+      yaml-indent-offset 4
+      c-basic-offset 4
+
       whitespace-style '(spaces tabs newline space-mark tab-mark newline-mark empty trailing)
       whitespace-action '(auto-cleanup))
 
@@ -23,6 +26,8 @@
                                     (next-line 6)))
 (global-set-key [remap move-beginning-of-line]
                 'move-beginning-of-line)
+
+(global-set-key [(control c) (control c)] 'comment-region)
 
 (smartparens-global-mode -1)
 
