@@ -28,6 +28,7 @@
                 'move-beginning-of-line)
 
 (global-set-key [(control c) (control c)] 'comment-region)
+(global-set-key [(meta delete)] 'kill-word)
 
 (smartparens-global-mode -1)
 
