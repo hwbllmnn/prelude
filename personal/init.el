@@ -11,7 +11,7 @@
       make-backup-files nil
       yaml-indent-offset 4
       c-basic-offset 4
-
+      sgml-basic-offset 4
       whitespace-style '(spaces tabs newline space-mark tab-mark newline-mark empty trailing)
       whitespace-action '(auto-cleanup))
 
